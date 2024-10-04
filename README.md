@@ -13,7 +13,7 @@ This project aims to develop a predictive model to assess battery performance ba
 The project is implemented in a single Python file where:
 - **Training**: Both Linear Regression and Random Forest Regressor models are trained on the synthetic dataset.
 - **Prediction**: Predictions are made on a test set, and performance is evaluated using metrics such as R² and Mean Absolute Error.
-- **Evaluation**: Evaluation metrics for both models are printed, allowing you to compare their performance.
+- **Evaluation**: Evaluation metrics for the model is printed, allowing you to compare the performance.
 - **Explainability**: LIME is used to explain feature importance, helping to understand which features most affect the prediction of battery life and efficiency.
 
 ## Dataset
@@ -31,10 +31,8 @@ The project is implemented in a single Python file where:
    ```
 The script will:
   Train the models.
-  Output the predictions and performance metrics.
-  Display SHAP plots for feature importance.
+  Output the predictions and performance metrics along with explanation.
 
 ## Results
-Linear Regression provides baseline predictions of battery performance.
 Random Forest Regressor offers improved performance by handling non-linear patterns in the dataset.
-SHAP Analysis provides insights into which features contribute the most to battery performance predictions.
+LIME Analysis provides insights into which features contribute the most to battery performance predictions.
