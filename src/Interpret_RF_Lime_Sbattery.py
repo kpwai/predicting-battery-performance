@@ -11,7 +11,7 @@ from lime import lime_tabular
 from lime.lime_tabular import LimeTabularExplainer
 
 # Load dataset
-df = pd.read_csv('Sbattery_performance_dataset.csv')
+df = pd.read_csv('data/Sbattery_performance_dataset.csv')
 
 # Separate features and labels
 X = df.drop('Failure', axis=1)
