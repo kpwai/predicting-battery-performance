@@ -6,16 +6,15 @@ This project aims to develop a predictive model to assess battery performance ba
 ## Techniques Used
 1. **Synthetic Data Generation**: A synthetic dataset is generated to represent different battery characteristics and operational environments.
 2. **Regression Models**:
-   - **Linear Regression**: A baseline model for predicting battery performance.
    - **Random Forest Regressor**: A more robust model to capture non-linear relationships and improve prediction accuracy.
-3. **Model Explainability**: SHAP (SHapley Additive exPlanations) is used to analyze feature importance and provide insights into the factors influencing the battery performance predictions.
+3. **Model Explainability**: LIME (Local Interpretable Model-agnostic Explanations) is used to analyze feature importance and provide insights into the factors influencing the battery performance predictions.
 
 ## Features of the Python Script
 The project is implemented in a single Python file where:
 - **Training**: Both Linear Regression and Random Forest Regressor models are trained on the synthetic dataset.
 - **Prediction**: Predictions are made on a test set, and performance is evaluated using metrics such as R² and Mean Absolute Error.
 - **Evaluation**: Evaluation metrics for both models are printed, allowing you to compare their performance.
-- **Explainability**: SHAP is used to explain feature importance, helping to understand which features most affect the prediction of battery life and efficiency.
+- **Explainability**: LIME is used to explain feature importance, helping to understand which features most affect the prediction of battery life and efficiency.
 
 ## Dataset
 - The dataset is synthetic, representing various battery conditions (e.g., temperature, voltage, cycles, etc.) and performance metrics.
@@ -28,7 +27,7 @@ The project is implemented in a single Python file where:
    ```
 3. Run the script:
    ```bash
-   python battery_performance.py
+   Interpret_RF_Lime_Sbattery.py
    ```
 The script will:
   Train the models.
